@@ -8,7 +8,7 @@ TARGET=CTC-lib
 	$(CC) -c -o $@ $< $(CFLAGS) $(LDFLAGS)
 
 build: ecc.o endecode.o main.o
-	$(CC) -o $@ $^ $(CFLAGS) $(LDFLAGS)
+	$(CC) -o $(TARGET) $^ $(CFLAGS) $(LDFLAGS)
 
 clean:
 	rm ./$(TARGET) *.o
